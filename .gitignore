@@ -1,2 +1,4 @@
 data/
 *.tar.gz
+data_model/tokenizers
+data_model/doc2vec_articles_0.model
