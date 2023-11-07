@@ -3,4 +3,4 @@ data/
 data_model/tokenizers
 data_model/doc2vec_articles_0.model
 data_model/corpora
-data_model/people_wiki.csv
+
