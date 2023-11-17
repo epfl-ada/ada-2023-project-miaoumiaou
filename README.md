@@ -1,6 +1,6 @@
 ﻿#### ada-2023-project-miaoumiaou
 
-# Left click, Right click : A Safari Through Wikispeedia's Political Jungle
+# Blue click, Red click : Decoding the matrix behind the political bias of Wikispeedia
 
 environ 981 mots
 
@@ -63,15 +63,15 @@ We then split our data in a split and train set and train our model.
 About the part of the project about political people, we needed to classify the political alignement of the person itself and that is much harder to do with a natural language processing script, as it will be influenced by the way the text is written rather than the life and opinion of the presented person. After trying to classify them using different techniques (using kmeans or the same SVM model as before), we realized the only way to get meaningful results was to classify them by hand. As the data consists of only about 60 people, it made sense to do it manually. 
 
 
--  Analyses
-Impact of Bias on Wikispeedia Gameplay
+-  Analyses <br>
+Impact of Bias on Wikispeedia Gameplay <br>
 Linear Regression: To correlate article bias with navigation time.
 Logistic Regression: For analyzing success rates as binary outcomes.
-Correlation Analysis: Pearson or Spearman methods to study relationships between article bias and gameplay metrics like backclicks.
-Analysis of Articles on Political Figures
+Correlation Analysis: Pearson or Spearman methods to study relationships between article bias and gameplay metrics like backclicks. <br>
+Analysis of Articles on Political Figures <br>
 Comparative Statistical Tests: T-tests for comparing different political groupings.
-Chi-Square Test: To examine associations in categorical data like path choices.
-General Methodological Approaches
+Chi-Square Test: To examine associations in categorical data like path choices. <br>
+General Methodological Approaches <br>
 Multivariate Analysis: Multiple regression or ANOVA for analyzing multiple variables.
 Time-Series Analysis: For identifying trends in data over time
 Propensity score matching to found Confounding factors
