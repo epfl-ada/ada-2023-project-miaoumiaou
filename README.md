@@ -40,7 +40,7 @@ In order to classify the articles in our main dataset, we need training data to 
 We'll use two alternatives websites to Wikipedia : RationalWiki for content with a left-leaning perspective and Infogalactic for right-leaning articles, acknowledging that both are recognized for their respective biases. This data will allow us to train our model in a supervised way.
 
 
-https://mediabiasfactcheck.com/infogalactic/
+https://mediabiasfactcheck.com/infogalactic/ <br>
 https://mediabiasfactcheck.com/rationalwiki/
 
 
