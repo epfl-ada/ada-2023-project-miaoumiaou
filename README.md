@@ -22,7 +22,7 @@ The research questions we will look into fall into 2 distinct categories. First,
     - Does it take them more time if they go through biased articles ?
     - Does it impact the success rate ? (more or less finished paths)
     - Are there more backclicks depending on the biases of the preceeding articles ?
-    - ..?
+    
 
 Then, we will look at the subset of articles about Political People. On these articles, we want to look at the impact of their political views and run the same analysis as before.
 
@@ -30,7 +30,7 @@ Then, we will look at the subset of articles about Political People. On these ar
 
 - Do the political alignment of people affect the way people play Wikispeedia ?
     - Does it take them more or less time, does it impact the success rate, affect the number of backclicks ?
-    - ...?
+    
 
 
 
@@ -40,7 +40,6 @@ Our main dataset is the Wikispeedia dataset. It contains the 4600 articles used 
 In order to classify the articles in our main dataset, we need training data to fit our model. 
 We'll use two alternatives websites to Wikipedia : RationalWiki for content with a left-leaning perspective and Infogalactic for right-leaning articles, acknowledging that both are recognized for their respective biases. This data will allow us to train our model in a supervised way.
 
-(https://mediabiasfactcheck.com/conservapedia/)
 
 https://mediabiasfactcheck.com/infogalactic/
 https://mediabiasfactcheck.com/rationalwiki/
@@ -48,14 +47,14 @@ https://mediabiasfactcheck.com/rationalwiki/
 
 
 #### METHOD
-- Classifying articles
+- Classifying articles <br>
 The first part of the project consists in classifying the articles we have considering their biases. One of the factor of the bias in Wikipedia is the language style [2], and this is the one we will focus one for our classification. Using our biased websites, we will train a Support Vector Machine model (SVM) to classify the articles on Wikispeedia.
-    - Data collection and preprocessing
+    - Data collection and preprocessing <br>
 We have used web scraping technic in order to extract the text content of 3000 random articles exclusive to RationalWiki (serves as a left leaning version of Wikipedia) and Infogalactic (serves as a right-leaning version of Wikipedia) to train our NLP model. 
 Additionnaly we have found 608 articles that are common to RationalWiki, Infogalactic and Wikispeedia dataset. This will offer another type of analysis to find the bias in wikispeedia articles text. These files are stored to csv and used as dataframe containing the plain text and title of each articles. 
 For more details about how we extracted the data, the code is available in the notebook called scraped_data/data_from_the_web.ipynb
 We then clean the data, by removing stopwords and tokenizing the texts. 
-    - Training model 
+    - Training model <br>
 We then split our data in a split and train set and train our model. 
 
 
@@ -102,8 +101,11 @@ Adrien Joliat : Implimenting ML model, Website Design<br>
 
 Sources 
 
-https://dl.acm.org/doi/pdf/10.1145/3001937 [1]
+[1] Das, S., Lavoie, A., & Magdon-Ismail, M. (2016). Manipulation among the arbiters of collective intelligence: How Wikipedia administrators mold public opinion. ACM Transactions on the Web (TWEB), 10(4), 1-25.
 
-https://dl.acm.org/doi/pdf/10.1145/3041021.3053375 [2]
 
-https://dlab.epfl.ch/people/west/pub/West-Pineau-Precup_IJCAI-09.pdf [3]
+Hube, C. (2017, April). Bias in wikipedia. In Proceedings of the 26th International Conference on World Wide Web Companion (pp. 717-721).
+[2]
+
+West, R., Pineau, J., & Precup, D. (2009, June). Wikispeedia: An online game for inferring semantic distances between concepts. In Twenty-First International Joint Conference on Artificial Intelligence.
+[3]
