@@ -1,8 +1,7 @@
 ﻿#### ada-2023-project-miaoumiaou
 
-# Blue click, Red click : Decoding the matrix behind the political bias of Wikispeedia
+# Blue click, Red click: Decoding the matrix behind the political bias of Wikispeedia
 
-about 981 words
 
 #### ABSTRACT 
  
