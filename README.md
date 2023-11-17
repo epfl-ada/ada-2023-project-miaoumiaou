@@ -5,8 +5,8 @@
 
 #### ABSTRACT 
  
-Today, Wikipedia is part of everybody's life. It is the first source that most people will check when they want to get information on something. This website is maintained by volunteers through open collaboration, and what makes its strength, can also bring problems. Wikipedia aims to have a neutral point of view and stay strictly factual but can we garantee this when anyone can become a contributor ? [1] observed that a large number of Wikipedia editors change their behaviour and focus on editing controversial topics when promoted to administrators, they might be biased (consciously or not) and influence these articles. 
-Our study aims to examine the political bias within Wikipedia and its potential impact on Wikispeedia players, a game where participants try to navigate to a specific article solely using hyperlinks within the current article. This game  aims to characterize semantic distances between concepts [3]. This will allow us to see if this semantic distance is influenced by bias.
+Today, Wikipedia is part of everybody's life. It is the first source that most people will check when they want to get information. This website is maintained by volunteers through open collaboration, and what makes its strength, can also bring problems. Wikipedia aims to have a neutral point of view and stay strictly factual but can we garantee this when anyone can become a contributor ? (Das & Lavoie, 2016) observed that a large number of Wikipedia editors change their behaviour and focus on editing controversial topics when promoted to administrators, they might be biased (consciously or not) and influence these articles. 
+Our study aims to examine the political bias within Wikipedia and its potential impact on Wikispeedia players, a game where participants try to navigate to a specific article solely using hyperlinks within the current article. This game  aims to characterize semantic distances between concepts (West et al., 2009). This will allow us to see if this semantic distance is influenced by bias.
 
 
 
@@ -35,7 +35,7 @@ Then, we will look at the subset of articles about Political People. On these ar
 
 
 #### DATASETS
-Our main dataset is the Wikispeedia dataset. It contains the 4600 articles used in the Wikispeedia game, as well as data from users' games, including finished and unfinished paths taken, time taken for each path, categorization of articles and more.
+Our main dataset is the Wikispeedia dataset. It contains the 4604 articles used in the Wikispeedia game, as well as data from users' games, including finished and unfinished paths taken, time taken for each path, categorization of articles and more.
 In order to classify the articles in our main dataset, we need training data to fit our model. 
 We'll use two alternatives websites to Wikipedia : RationalWiki for content with a left-leaning perspective and Infogalactic for right-leaning articles, acknowledging that both are recognized for their respective biases. This data will allow us to train our model in a supervised way.
 
@@ -47,7 +47,7 @@ https://mediabiasfactcheck.com/rationalwiki/
 
 #### METHOD
 - Classifying articles <br>
-The first part of the project consists in classifying the articles we have considering their biases. One of the factor of the bias in Wikipedia is the language style [2], and this is the one we will focus one for our classification. Using our biased websites, we will train a Support Vector Machine model (SVM) to classify the articles on Wikispeedia.
+The first part of the project consists in classifying the articles we have considering their biases. One of the factor of the bias in Wikipedia is the language style (Hube, 2017), and this is the one we will focus one for our classification. Using our biased websites, we will train a Support Vector Machine model (SVM) to classify the articles on Wikispeedia.
     - Data collection and preprocessing <br>
 We have used web scraping technic in order to extract the text content of 3000 random articles exclusive to RationalWiki (serves as a left leaning version of Wikipedia) and Infogalactic (serves as a right-leaning version of Wikipedia) to train our NLP model. 
 Additionnaly we have found 608 articles that are common to RationalWiki, Infogalactic and Wikispeedia dataset. This will offer another type of analysis to find the bias in wikispeedia articles text. These files are stored to csv and used as dataframe containing the plain text and title of each articles. 
