@@ -2,7 +2,7 @@
 
 # Blue click, Red click : Decoding the matrix behind the political bias of Wikispeedia
 
-about 981 words
+About 981 words
 
 #### ABSTRACT 
  
