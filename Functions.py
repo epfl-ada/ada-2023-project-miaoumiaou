@@ -19,7 +19,10 @@ def download_extract_data():
     else:
         print("Repository data already exist")
 
-
+    if os.path.exists("./data/wikispeedia_articles_plaintext"):
+        return 1
+        
+         
     urls=["https://snap.stanford.edu/data/wikispeedia/wikispeedia_paths-and-graph.tar.gz",
         "https://snap.stanford.edu/data/wikispeedia/wikispeedia_articles_plaintext.tar.gz"]
         #,"https://snap.stanford.edu/data/wikispeedia/wikispeedia_articles_html.tar.gz"]
@@ -47,7 +50,7 @@ def download_extract_data():
             
     for path in PATH:
         os.remove(path)
-
+    return 0
 
 def load_plain_article():
     text_file_dir="./data/wikispeedia_articles_plaintext/plaintext_articles/"
