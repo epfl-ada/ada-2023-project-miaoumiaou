@@ -25,8 +25,6 @@ def download_extract_data():
          
     urls=["https://snap.stanford.edu/data/wikispeedia/wikispeedia_paths-and-graph.tar.gz",
         "https://snap.stanford.edu/data/wikispeedia/wikispeedia_articles_plaintext.tar.gz"]
-        #,"https://snap.stanford.edu/data/wikispeedia/wikispeedia_articles_html.tar.gz"]
-        #Le dernier lien contient tous les codes htm de tous les articles wikispeedia (très lourd et jsp si on va utiliser ?)
 
     for url in urls:    
         response=requests.get(url)
