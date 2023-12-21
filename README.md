@@ -2,7 +2,6 @@
 
 # Blue click, Red click : Decoding the matrix behind the political bias of Wikispeedia
 
-about 981 words
 
 #### ABSTRACT 
  
@@ -76,16 +75,6 @@ Time-Series Analysis: For identifying trends in data over time
 Propensity score matching to found Confounding factors
  
 
-
-#### PROPOSED TIMELINE
-
-
-17th of November : Project Milestone 2 Deadline <br>
-    - Pre-processing of data, initial analyses <br>
-1st December : First analyses <br>
-8th of December : Analysis and Visualisation <br>
-15th of December : Start of redaction of data story and website design <br>
-22nd of December : Final Project deliverable  <br>
 
 
 #### Organization within the team 
