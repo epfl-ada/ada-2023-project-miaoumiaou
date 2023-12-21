@@ -50,12 +50,11 @@ https://mediabiasfactcheck.com/rationalwiki/
 - Classifying articles <br>
 The first part of the project consists in classifying the articles we have considering their biases. One of the factor of the bias in Wikipedia is the language style (Hube, 2017), and this is the one we will focus one for our classification. Using our biased websites, we will train a Support Vector Machine model (SVM) to classify the articles on Wikispeedia.
     - Data collection and preprocessing <br>
-We have used web scraping technic in order to extract the text content of 3000 random articles exclusive to RationalWiki (serves as a left leaning version of Wikipedia) and Infogalactic (serves as a right-leaning version of Wikipedia) to train our NLP model. 
-Additionnaly we have found 608 articles that are common to RationalWiki, Infogalactic and Wikispeedia dataset. This will offer another type of analysis to find the bias in wikispeedia articles text. These files are stored to csv and used as dataframe containing the plain text and title of each articles. 
+We have used web scraping technic in order to extract the text content of 3000 random articles exclusive to RationalWiki (serves as a left leaning version of Wikipedia) and Infogalactic (serves as a right-leaning version of Wikipedia) to train our NLP model. These files are stored to csv and used as dataframe containing the plain text and title of each articles. 
 For more details about how we extracted the data, the code is available in the notebook called scraped_data/data_from_the_web.ipynb
 We then clean the data, by removing stopwords and tokenizing the texts. 
     - Training model <br>
-We then split our data in a split and train set and train our model. 
+We then split our data in a test and train set ( 10%/90% ). We tokenize and vectorize using BERT and afterwards fit a SVM model to classify the Wikispeedia articles. The results are conclusive are the accuracy on the test set is 92.55%. 
 
 
 
