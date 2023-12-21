@@ -15,20 +15,20 @@ Our study aims to examine the political bias within Wikipedia and its potential 
 The research questions we will look into fall into 2 distinct categories. First, we'll take a look at the way articles are written, and then we want to study articles about political people and how their personal political alignments. 
 
 - Is there a political bias in the way wikipedia articles are written ?
-    - Do people tend to associate these biases in a positive or negative manner ?
+    - Are articles written more on a right or left biased way ?
+    - Is there a difference between articles categories ?
+    - Does a bias in the writting is correlated to a biased personnality (focus on the politicial people) ?
 
 - If there is a bias, does it affect the way people play wikispeedia ?  
     - Does it take them more time if they go through biased articles ?
     - Does it impact the success rate ? (more or less finished paths)
     - Are there more backclicks depending on the biases of the preceeding articles ?
-    
+    - Does it affect the rating in the game ?
+    - Does a biased article leads to another biased article based on the link between the articles ?
 
-Then, we will look at the subset of articles about Political People. On these articles, we want to look at the impact of their political views and run the same analysis as before.
-
-- Do people tend to associate these political people in a positive or negative manner ?
-
-- Do the political alignment of people affect the way people play Wikispeedia ?
-    - Does it take them more or less time, does it impact the success rate, affect the number of backclicks ?
+- What about the players ?
+    - Do players tend to choose particulate start or finish pages ?
+    - Do players tend to go more on right or left articles ?
     
 
 
@@ -62,17 +62,25 @@ About the part of the project about political people, we needed to classify the 
 
 
 -  Analyses <br>
+Global analyses on the entire dataset <br>
+Analyses on the differences between the finished paths and the unfinished paths <br>
+Analyses on the starting and ending pages <br>
+Global analyses on the political people <br>
+Correlation analyses on political people between the bias of their article and their political affiliation <br>
+Politication affiliation distribution of the political people <br>
+Political bias repartion <br>
+Political analyses by article type and categories <br>
+Comparative analyses between the finished paths and the unfinished paths on the average numerical bias <br>
 Impact of Bias on Wikispeedia Gameplay <br>
-Linear Regression: To correlate article bias with navigation time.
-Logistic Regression: For analyzing success rates as binary outcomes.
-Correlation Analysis: Pearson or Spearman methods to study relationships between article bias and gameplay metrics like backclicks. <br>
-Analysis of Articles on Political Figures <br>
-Comparative Statistical Tests: T-tests for comparing different political groupings.
+Linear Regression: To correlate article bias with navigation path. <br>
+Correlation Analysis: Regression, Chi and T test to study relationships between article bias and gameplay metrics like backclicks. <br>
+Comparative Statistical Tests: T-tests for comparing different political groupings. <br>
 Chi-Square Test: To examine associations in categorical data like path choices. <br>
+Political bias repartition for backclisks in finished and unfinished paths<br>
+Analyses of bias evolution through the paths <br>
 General Methodological Approaches <br>
-Multivariate Analysis: Multiple regression or ANOVA for analyzing multiple variables.
-Time-Series Analysis: For identifying trends in data over time
-Propensity score matching to found Confounding factors
+Logistic regression to determine wether the results are statistically significant <br>
+
  
 
 
