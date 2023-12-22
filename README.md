@@ -9,10 +9,9 @@ Today, Wikipedia is part of everybody's life. It is the first source that most p
 Our study aims to examine the political bias within Wikipedia and its potential impact on Wikispeedia players, a game where participants try to navigate to a specific article solely using hyperlinks within the current article. This game  aims to characterize semantic distances between concepts (West et al., 2009). This will allow us to see if this semantic distance is influenced by bias.
 
 
-
-
 #### RESEARCH QUESTIONS 
-The research questions we will look into fall into 2 distinct categories. First, we'll take a look at the way articles are written, and then we want to study articles about political people and how their personal political alignments. 
+The research questions we will examine fall into two distinct categories.  
+First, we'll take a look at how the articles are written, then we'll look at articles about political figures and their personal political positions.
 
 - Is there a political bias in the way wikipedia articles are written ?
     - Are articles written more on a right or left biased way ?
@@ -51,9 +50,8 @@ The first part of the project consists in classifying the articles we have consi
     - Data collection and preprocessing <br>
 We have used web scraping technic in order to extract the text content of 3000 random articles exclusive to RationalWiki (serves as a left leaning version of Wikipedia) and Infogalactic (serves as a right-leaning version of Wikipedia) to train our NLP model. These files are stored to csv and used as dataframe containing the plain text and title of each articles. 
 For more details about how we extracted the data, the code is available in the notebook called scraped_data/data_from_the_web.ipynb
-We then clean the data, by removing stopwords and tokenizing the texts. 
     - Training model <br>
-We then split our data in a test and train set ( 10%/90% ). We tokenize and vectorize using BERT and afterwards fit a SVM model to classify the Wikispeedia articles. The results are conclusive are the accuracy on the test set is 92.55%. 
+Then a first cleaning of the text are applied in the NLP code/Clean.ipynb and after that, we use the NLP_final.ipynb to define the model. We split our data in a test and train set ( 10%/90% ) then we tokenize and vectorize using BERT and afterwards fit a SVM model to classify the Wikispeedia articles. The results are conclusive are the accuracy on the test set is 92.55%. 
 
 
 
@@ -87,11 +85,11 @@ Logistic regression to determine wether the results are statistically significan
 
 #### Organization within the team 
 
-Wassim Maj : Redaction of Readme, Graphs, Redaction of Data Story<br>
+Wassim Maj : Redaction of Readme, Graphs, Analyses, Redaction of Data Story<br>
 Viacheslav Bolotnikov : Data collection from websites, Analyses<br>
 Jeremy Dahan : Data collection from websites, Redaction of Data Story<br>
 Matthieu Jacques : Classification of political people, Graphs<br>
-Adrien Joliat : Implimenting ML model, Website Design<br>
+Adrien Joliat : NLP model, Analyses, Graphs, Website Design<br>
 
 
 
