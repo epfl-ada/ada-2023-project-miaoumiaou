@@ -185,3 +185,33 @@ def get_color(value):
         return colors['right']
     else:
         return colors['center']
+
+
+def check_condition(first_bias, next_bias, matrix,n):
+    # Function to map the transition from different biases in pathes to a matrix in this form : 
+
+    # [ RR RL RC
+    #   LR LL LC
+    #   CR CL CC] 
+    # Where R means right biased, L left bias and C means no bias
+    # For example the position [0,2] is RC meaning the proportion of steps in paths going from Right-biased to not biased articles
+
+    if first_bias == 'right':
+        i =0
+    elif first_bias == 'left':
+        i =1
+    elif first_bias == 'center':
+        i = 2
+
+    if next_bias== 'right':
+        j =0
+    elif next_bias == 'left':
+        j =1
+    elif next_bias == 'center':
+        j= 2
+
+    
+
+    matrix[n-1,i,j] += 1 
+    
+    return matrix
